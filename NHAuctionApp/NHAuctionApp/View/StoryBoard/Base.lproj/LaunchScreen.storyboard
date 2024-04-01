@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4SZ-YG-Nqt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Rmw-o9-WOS">
+            <objects>
+                <viewController storyboardIdentifier="LaunchScreenViewController" id="4SZ-YG-Nqt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Idu-PF-poA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Lh9-gD-ImX">
+                                <rect key="frame" x="136" y="244.5" width="142" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="uXN-9h-yzS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="hHK-7I-GHL">
+                                <rect key="frame" x="87" y="661" width="240" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="placeholderTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Dax-10-ao1"/>
+                                    <constraint firstAttribute="height" constant="80" id="Q2o-sA-4cf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cowauctionTitle" translatesAutoresizingMaskIntoConstraints="NO" id="QzE-gX-Rjw">
+                                <rect key="frame" x="49" y="768" width="316" height="36"/>
+                                <color key="tintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="P7g-ng-PEx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fTS-Re-QMJ"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hHK-7I-GHL" firstAttribute="centerX" secondItem="Idu-PF-poA" secondAttribute="centerX" id="6Au-wu-pXs"/>
+                            <constraint firstItem="Lh9-gD-ImX" firstAttribute="centerY" secondItem="fTS-Re-QMJ" secondAttribute="centerY" multiplier="0.8" id="8Hh-7C-A3S"/>
+                            <constraint firstItem="QzE-gX-Rjw" firstAttribute="centerX" secondItem="hHK-7I-GHL" secondAttribute="centerX" id="DVy-yd-MOU"/>
+                            <constraint firstItem="Lh9-gD-ImX" firstAttribute="centerX" secondItem="Idu-PF-poA" secondAttribute="centerX" id="PWz-bj-WbX"/>
+                            <constraint firstItem="fTS-Re-QMJ" firstAttribute="bottom" secondItem="QzE-gX-Rjw" secondAttribute="bottom" constant="58" id="Wsz-GS-pLB"/>
+                            <constraint firstItem="hHK-7I-GHL" firstAttribute="bottom" secondItem="QzE-gX-Rjw" secondAttribute="top" constant="-27" id="lwc-WK-hR2"/>
+                            <constraint firstItem="QzE-gX-Rjw" firstAttribute="leading" secondItem="fTS-Re-QMJ" secondAttribute="leading" constant="49" id="wWy-lf-Rz7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XTM-K3-SS2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6j8-Ge-r0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-88.405797101449281" y="802.90178571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchScreen" width="248" height="236"/>
+        <image name="compyLogo" width="322" height="47"/>
+        <image name="cowauctionTitle" width="466" height="52"/>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

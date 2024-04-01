@@ -1,0 +1,124 @@
+PODS:
+  - AgoraRtcEngine_iOS (4.2.6):
+    - AgoraRtcEngine_iOS/AIAEC (= 4.2.6)
+    - AgoraRtcEngine_iOS/AINS (= 4.2.6)
+    - AgoraRtcEngine_iOS/AudioBeauty (= 4.2.6)
+    - AgoraRtcEngine_iOS/ClearVision (= 4.2.6)
+    - AgoraRtcEngine_iOS/ContentInspect (= 4.2.6)
+    - AgoraRtcEngine_iOS/DRM (= 4.2.6)
+    - AgoraRtcEngine_iOS/FaceDetection (= 4.2.6)
+    - AgoraRtcEngine_iOS/ReplayKit (= 4.2.6)
+    - AgoraRtcEngine_iOS/RtcBasic (= 4.2.6)
+    - AgoraRtcEngine_iOS/SpatialAudio (= 4.2.6)
+    - AgoraRtcEngine_iOS/VideoCodecDec (= 4.2.6)
+    - AgoraRtcEngine_iOS/VideoCodecEnc (= 4.2.6)
+    - AgoraRtcEngine_iOS/VirtualBackground (= 4.2.6)
+    - AgoraRtcEngine_iOS/VQA (= 4.2.6)
+  - AgoraRtcEngine_iOS/AIAEC (4.2.6)
+  - AgoraRtcEngine_iOS/AINS (4.2.6)
+  - AgoraRtcEngine_iOS/AudioBeauty (4.2.6)
+  - AgoraRtcEngine_iOS/ClearVision (4.2.6)
+  - AgoraRtcEngine_iOS/ContentInspect (4.2.6)
+  - AgoraRtcEngine_iOS/DRM (4.2.6)
+  - AgoraRtcEngine_iOS/FaceDetection (4.2.6)
+  - AgoraRtcEngine_iOS/ReplayKit (4.2.6)
+  - AgoraRtcEngine_iOS/RtcBasic (4.2.6)
+  - AgoraRtcEngine_iOS/SpatialAudio (4.2.6)
+  - AgoraRtcEngine_iOS/VideoCodecDec (4.2.6)
+  - AgoraRtcEngine_iOS/VideoCodecEnc (4.2.6)
+  - AgoraRtcEngine_iOS/VirtualBackground (4.2.6)
+  - AgoraRtcEngine_iOS/VQA (4.2.6)
+  - Alamofire (4.9.1)
+  - AlamofireObjectMapper (5.2.1):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - FirebaseCore (9.6.0):
+    - FirebaseCoreDiagnostics (~> 9.0)
+    - FirebaseCoreInternal (~> 9.0)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/Logger (~> 7.7)
+  - FirebaseCoreDiagnostics (9.6.0):
+    - GoogleDataTransport (< 10.0.0, >= 9.1.4)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/Logger (~> 7.7)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - FirebaseCoreInternal (9.6.0):
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+  - FirebaseDynamicLinks (9.6.0):
+    - FirebaseCore (~> 9.0)
+  - GoogleDataTransport (9.2.0):
+    - GoogleUtilities/Environment (~> 7.7)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Environment (7.10.0):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.10.0):
+    - GoogleUtilities/Environment
+  - "GoogleUtilities/NSData+zlib (7.10.0)"
+  - JWTDecode (2.6.3)
+  - MarqueeLabel (4.3.0)
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
+  - ObjectMapper (3.5.3)
+  - PromisesObjC (2.1.1)
+  - SwiftProtobuf (1.19.0)
+  - SwiftyJSON (5.0.1)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - AgoraRtcEngine_iOS
+  - Alamofire (~> 4.7)
+  - AlamofireObjectMapper (~> 5.2)
+  - FirebaseDynamicLinks
+  - JWTDecode (~> 2.6)
+  - MarqueeLabel
+  - ObjectMapper
+  - SwiftProtobuf (~> 1.0)
+  - SwiftyJSON
+  - Toast-Swift (~> 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - AgoraRtcEngine_iOS
+    - Alamofire
+    - AlamofireObjectMapper
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreInternal
+    - FirebaseDynamicLinks
+    - GoogleDataTransport
+    - GoogleUtilities
+    - JWTDecode
+    - MarqueeLabel
+    - nanopb
+    - ObjectMapper
+    - PromisesObjC
+    - SwiftProtobuf
+    - SwiftyJSON
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  AgoraRtcEngine_iOS: ac647332ad8f86d79cf810601c9e62b28c3a4de0
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  FirebaseCore: 2082fffcd855f95f883c0a1641133eb9bbe76d40
+  FirebaseCoreDiagnostics: 99a495094b10a57eeb3ae8efa1665700ad0bdaa6
+  FirebaseCoreInternal: bca76517fe1ed381e989f5e7d8abb0da8d85bed3
+  FirebaseDynamicLinks: 894ee3b4e56a77abee067d371c9a23e7b5a3c686
+  GoogleDataTransport: 1c8145da7117bd68bbbed00cf304edb6a24de00f
+  GoogleUtilities: bad72cb363809015b1f7f19beb1f1cd23c589f95
+  JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
+  MarqueeLabel: 02f5ac8fd6877c94564556cb93fa86c70c08baeb
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
+  SwiftProtobuf: 6ef3f0e422ef90d6605ca20b21a94f6c1324d6b3
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: dcb13f13317ddafb16b2d2578207c5779c89b02d
+
+COCOAPODS: 1.14.3

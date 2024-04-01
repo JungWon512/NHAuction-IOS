@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansCJKkr-Bold.otf">
+            <string>NotoSansCJKkr-Bold</string>
+        </array>
+        <array key="NotoSansCJKkr-Medium.otf">
+            <string>NotoSansCJKkr-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Popup One Bnt View Controller-->
+        <scene sceneID="fkd-CW-BZK">
+            <objects>
+                <viewController storyboardIdentifier="PopupOneBntViewController" id="Wyw-7D-r5x" customClass="PopupOneBntViewController" customModule="NHAuctionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iS2-jH-6ir">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6h1-fP-KZv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdi-dw-a2e">
+                                <rect key="frame" x="37" y="344.5" width="340" height="217"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7U-oQ-6IJ">
+                                        <rect key="frame" x="20" y="45" width="300" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="0TX-mf-gfQ"/>
+                                            <constraint firstAttribute="height" constant="90" id="BGp-c7-zVM"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8a-oo-2uw" customClass="BaseButton" customModule="NHAuctionApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="165" width="340" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="Dfk-Qr-sms"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKkr-Bold" family="Noto Sans CJK KR" pointSize="20"/>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="Wyw-7D-r5x" eventType="touchUpInside" id="uzF-20-lgy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="A8a-oo-2uw" secondAttribute="trailing" id="DiN-G5-pHv"/>
+                                    <constraint firstItem="a7U-oQ-6IJ" firstAttribute="centerX" secondItem="zdi-dw-a2e" secondAttribute="centerX" id="EXe-PO-xkh"/>
+                                    <constraint firstAttribute="width" constant="340" id="Mzv-UG-mqZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="A8a-oo-2uw" secondAttribute="bottom" id="dyb-FP-jtx"/>
+                                    <constraint firstItem="A8a-oo-2uw" firstAttribute="leading" secondItem="zdi-dw-a2e" secondAttribute="leading" id="fBc-kw-8lP"/>
+                                    <constraint firstItem="A8a-oo-2uw" firstAttribute="top" secondItem="a7U-oQ-6IJ" secondAttribute="bottom" constant="30" id="tTq-Hj-Sq1"/>
+                                    <constraint firstItem="a7U-oQ-6IJ" firstAttribute="top" secondItem="zdi-dw-a2e" secondAttribute="top" constant="45" id="xFm-bp-uWj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d9X-Ca-aKj"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6h1-fP-KZv" firstAttribute="leading" secondItem="d9X-Ca-aKj" secondAttribute="leading" id="2dX-LH-VU1"/>
+                            <constraint firstItem="d9X-Ca-aKj" firstAttribute="trailing" secondItem="6h1-fP-KZv" secondAttribute="trailing" id="8R0-Va-J2W"/>
+                            <constraint firstItem="6h1-fP-KZv" firstAttribute="top" secondItem="iS2-jH-6ir" secondAttribute="top" id="8fp-cL-uTV"/>
+                            <constraint firstItem="zdi-dw-a2e" firstAttribute="centerX" secondItem="d9X-Ca-aKj" secondAttribute="centerX" id="emR-lY-7KS"/>
+                            <constraint firstAttribute="bottom" secondItem="6h1-fP-KZv" secondAttribute="bottom" id="lfV-gg-xfI"/>
+                            <constraint firstItem="zdi-dw-a2e" firstAttribute="centerY" secondItem="d9X-Ca-aKj" secondAttribute="centerY" id="sCA-t3-xez"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="A8a-oo-2uw" id="yth-OZ-Ewg"/>
+                        <outlet property="msgLbl" destination="a7U-oQ-6IJ" id="tq3-Xa-YHL"/>
+                        <outlet property="popupView" destination="zdi-dw-a2e" id="NTz-dq-lEZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AYt-UL-O77" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="684" y="168.6656671664168"/>
+        </scene>
+        <!--Popup Two Bnt View Controller-->
+        <scene sceneID="9sj-4Y-m60">
+            <objects>
+                <viewController storyboardIdentifier="PopupTwoBntViewController" id="shf-rf-2gH" customClass="PopupTwoBntViewController" customModule="NHAuctionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Skt-xz-Kh9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="858-ET-gv4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kCD-cb-vbA">
+                                <rect key="frame" x="37" y="352.5" width="340" height="201"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luA-St-Hnp">
+                                        <rect key="frame" x="20" y="29" width="300" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="0Sz-eB-mbX"/>
+                                            <constraint firstAttribute="height" constant="90" id="d2d-E8-1ef"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maU-kT-GEL" customClass="BaseButton" customModule="NHAuctionApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="149" width="170" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="IFk-EB-daA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKkr-Bold" family="Noto Sans CJK KR" pointSize="20"/>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="shf-rf-2gH" eventType="touchUpInside" id="vom-S7-OXb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8B0-4b-c9m" customClass="BaseButton" customModule="NHAuctionApp" customModuleProvider="target">
+                                        <rect key="frame" x="170" y="149" width="170" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="WOf-Pm-0q6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKkr-Bold" family="Noto Sans CJK KR" pointSize="20"/>
+                                        <connections>
+                                            <action selector="confirmButton:" destination="shf-rf-2gH" eventType="touchUpInside" id="pqW-pR-Kya"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="maU-kT-GEL" secondAttribute="bottom" id="8Kz-9x-Okz"/>
+                                    <constraint firstAttribute="width" constant="340" id="8OR-oO-Pbh"/>
+                                    <constraint firstAttribute="bottom" secondItem="8B0-4b-c9m" secondAttribute="bottom" id="K9g-6e-EP5"/>
+                                    <constraint firstItem="maU-kT-GEL" firstAttribute="leading" secondItem="kCD-cb-vbA" secondAttribute="leading" id="MZs-y5-IRf"/>
+                                    <constraint firstItem="luA-St-Hnp" firstAttribute="top" secondItem="kCD-cb-vbA" secondAttribute="top" constant="29" id="Waq-tk-fOC"/>
+                                    <constraint firstAttribute="trailing" secondItem="8B0-4b-c9m" secondAttribute="trailing" id="YJC-gj-Awc"/>
+                                    <constraint firstItem="8B0-4b-c9m" firstAttribute="top" secondItem="luA-St-Hnp" secondAttribute="bottom" constant="30" id="dM1-52-tSR"/>
+                                    <constraint firstItem="luA-St-Hnp" firstAttribute="centerX" secondItem="kCD-cb-vbA" secondAttribute="centerX" id="nDc-0s-m7F"/>
+                                    <constraint firstItem="maU-kT-GEL" firstAttribute="width" secondItem="8B0-4b-c9m" secondAttribute="width" id="uF4-AS-JXk"/>
+                                    <constraint firstItem="8B0-4b-c9m" firstAttribute="leading" secondItem="maU-kT-GEL" secondAttribute="trailing" id="wRS-E0-BoC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wJ6-Xm-3C8"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="858-ET-gv4" firstAttribute="leading" secondItem="wJ6-Xm-3C8" secondAttribute="leading" id="3FN-dP-dFb"/>
+                            <constraint firstItem="kCD-cb-vbA" firstAttribute="centerY" secondItem="wJ6-Xm-3C8" secondAttribute="centerY" id="3zf-zF-9E3"/>
+                            <constraint firstItem="858-ET-gv4" firstAttribute="bottom" secondItem="wJ6-Xm-3C8" secondAttribute="bottom" id="I2n-ek-eo5"/>
+                            <constraint firstItem="kCD-cb-vbA" firstAttribute="centerX" secondItem="wJ6-Xm-3C8" secondAttribute="centerX" id="Mkz-og-Hug"/>
+                            <constraint firstItem="858-ET-gv4" firstAttribute="top" secondItem="Skt-xz-Kh9" secondAttribute="top" id="Upm-Zu-Qdq"/>
+                            <constraint firstItem="858-ET-gv4" firstAttribute="trailing" secondItem="wJ6-Xm-3C8" secondAttribute="trailing" id="sdo-Wq-HqU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="maU-kT-GEL" id="roo-p2-vff"/>
+                        <outlet property="confirmButton" destination="8B0-4b-c9m" id="OnC-GN-f9R"/>
+                        <outlet property="msgLbl" destination="luA-St-Hnp" id="dVw-DE-xik"/>
+                        <outlet property="popupView" destination="kCD-cb-vbA" id="nhK-v8-wzj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MKp-x9-ijv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1372" y="168.6656671664168"/>
+        </scene>
+    </scenes>
+</document>

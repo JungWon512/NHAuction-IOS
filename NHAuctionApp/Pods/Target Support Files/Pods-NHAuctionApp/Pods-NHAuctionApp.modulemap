@@ -1,0 +1,6 @@
+framework module Pods_NHAuctionApp {
+  umbrella header "Pods-NHAuctionApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
