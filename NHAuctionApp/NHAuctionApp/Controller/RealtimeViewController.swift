@@ -233,10 +233,11 @@ class RealtimeViewController: BaseViewController, StreamDelegate,WKNavigationDel
         btnCancel.setAttributedTitle(btnCancelAttributedTitle, for: .normal)
         btnCancel.contentVerticalAlignment = .top
         scrollView.delegate = self
-        let sockethost = LocalStorage.shared.getNetHost()
+        //let sockethost = LocalStorage.shared.getNetHost()
+        let sockethost = "cowauction.kr"
         let socketPort = LocalStorage.shared.getNetPort()
         #if DEBUG
-//            sockethost = SOCKET.DEBUG_HOST
+            sockethost = "www.xn--e20bw05b.kr"
         #endif
         self.connect(host: sockethost, port: Int(socketPort)!)
         status = SOCKET_STATUS.DISCONNECTED
@@ -1309,11 +1310,13 @@ class RealtimeViewController: BaseViewController, StreamDelegate,WKNavigationDel
                     case SOCKET_PROTOCOL_CODE.AUCTION_RESULT:
                         let auctionResult = AuctionResult(transaction: transaction)
                         let resultCode = Int(auctionResult!.auctionResultCode)!
+                        var unitTypeValue = "" // Default
+                        /*
                         var unitTypeValue = "만 원" // Default
                         // 출장우가 비육우, unitType이 1인 경우 "원"으로 표시
                         if globalCurrentEntryInfo.entryType == "2" && globalUnitType == "1" {
                             unitTypeValue = "원"
-                        }
+                        }*/
 
                         let screenAction = screenAction(statusCode: 250000 + resultCode, message: auctionResult!.userNum, String(auctionResult!.price), unitTypeValue)
                         runScreenAction(screenAction:screenAction)

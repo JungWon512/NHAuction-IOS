@@ -387,23 +387,27 @@ func screenAction(statusCode:Int, message:String...) -> ScreenAction {
     case 250011:
         break
     case 250022:
-        
+        var unitTypeValue = ""
+        /*
         var unitTypeValue = "만 원"
         if message.count == 3 {
             unitTypeValue = message[2]
-        }
+        }*/
         
         let userNum = LocalStorage.shared.getUserNum()
         if(message[0] == userNum) {
             //AUCTION_STATE.SUCCESS_BID.code()
             let resultPrice = Int(message[1])!
-            let msgString = "\(resultPrice.withCommas())\(unitTypeValue) 낙찰"
+            //let msgString = "\(resultPrice.withCommas())\(unitTypeValue) 낙찰"
+            let msgString = "낙찰금액 \(resultPrice.withCommas())\(unitTypeValue)"
             
-                    
+            /*
             let range: Range<String.Index> = msgString.range(of: "낙찰")!
             let position : Int = msgString.distance(from: msgString.startIndex, to: range.lowerBound)
            
             result.attributedString = STATUS_VIEW.init(string: msgString, blueStart: position, blueLength: 2)!.attrString
+             */
+            result.attributedString = STATUS_VIEW.init(string: msgString, blueStart: 0, blueLength: 4)!.attrString
         } else {
             
             let resultPrice = Int(message[1])!
