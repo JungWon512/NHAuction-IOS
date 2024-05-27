@@ -170,6 +170,7 @@ class NHWebViewController: BaseWebViewController, UINavigationControllerDelegate
         userController.add(self, name: "moveWebPage")
         userController.add(self, name: "setUserInfo")
         userController.add(self, name: "moveAuctionWatch")
+        userController.add(self, name: "moveWebUrl")
         
         let configuration = WKWebViewConfiguration()
         configuration.websiteDataStore = WKWebsiteDataStore.default()
@@ -432,6 +433,16 @@ extension NHWebViewController: WKScriptMessageHandler {
                     }
                 })
             }
+            break
+        case "moveWebUrl":
+            guard let outLink = message.body as? String, let _url = URL(string: outLink) else { return }
+            
+            debugPrint(outLink)
+            if #available(iOS 10.0, *) {
+               UIApplication.shared.open(_url, options: [:])
+           } else {
+               UIApplication.shared.openURL(_url)
+           }
             break
         default:
             debugPrint("#277:\(message.name)")
